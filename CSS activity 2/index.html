@@ -1,52 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Styled Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First Styled Web Page</title>
+
+<link rel="icon" type="image/png" href="spiderman.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    <div class ="container"> 
-        <h1>All About Me</h1>
 
-        <h2>Who am I?</h2>
-        <p>I am a student learning web development. I enjoy creating websites and learning new technologies. <i>My name is Kleiser Castillo, but you can call me <u>"Kleng</u>. I am an Information Technology student at the University of the Cordilleras, developing my knowledge and skills in technology and computing. I came from Talavera, Nueva Ecija, and currently live in Baguio City to fulfill my dreams in life</i></p>
+<div class="scroll-progress"></div>
 
-        <img src="kleiser.jpg" alt="My Picture" class="profile-img">
+<nav id="navbar">
+  <div class="nav-container">
+    <ul class="nav-list">
+      <li><a href="#welcome-section">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-        <table class="info-table">
-            <tr>
-                <td>
-                    <h2>How old am I?</h2>
-                    <p>
-                        I was born on <b>June 1, 2005</b> and I am currently <b>20 years old</b>. This age marks an important stage of my life where I am learning to become more responsible and independent. I am focused on developing my skills, improving myself, and preparing for my future goals. I am excited to see what the future holds for me as I continue to grow and learn. I will make the most of my youth and strive to achieve my dreams while enjoying the journey of life. As I navigate through this exciting phase, I am committed to making the most of every opportunity and embracing the challenges that come my way.
-                    </p>
-                </td>
-            </tr>
-        </table>
-
-        <table class="info-table"> 
-            <tr>
-                <td>
-                    <h2>What are my hobbies and interests?</h2>
-                    <ul class="hobbies">
-                        <li>Becoming an IT professional</li>
-                        <li>Playing a guitar</li>
-                        <li>Watching TV series</li>
-                        <li>Doing household chores</li>
-                        <li>Reading motivational books</li>
-                        <li>Cooking</li>
-                        <li>Exercising</li>
-                        <li>Travelling</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-        
-        <hr>
-        <p><small>© 2024 Kleiser Castillo. All rights reserved. <br>"When the time is right I the Lord will make it happen"</small></p>
+    <div class="social-icons">
+      <a href="https://github.com/kcast0601" target="_blank">
+        <img src="github.png">
+      </a>
+      <a href="https://www.linkedin.com/in/kleiser-castillo-516844381/" target="_blank">
+        <img src="linkedin.png">
+      </a>
     </div>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<section id="welcome-section">
+  <img src="kcstllo.jpg" class="profile-pic">
+  <h1>Hello, I'm <span class="gradient-text">Kleiser V. Castillo</span></h1>
+  <p>20 years old • 2nd Year BSIT • Web Technologies Specialization</p>
+  <p class="hobbies">Playing Guitar • Singing • Watching TV-Series</p>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="project-grid">
+
+    <div class="project-tile">
+      <img src="survey.png">
+      <div class="overlay">
+        <h3>Survey Form</h3>
+        <a class="view-btn" href="https://survey-chi-gilt.vercel.app/" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-tile">
+      <img src="tribute.png">
+      <div class="overlay">
+        <h3>Tribute Page</h3>
+        <a class="view-btn" href="https://tribute-ashen.vercel.app/" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-tile">
+      <img src="technicaldoc.png">
+      <div class="overlay">
+        <h3>Technical Documentation</h3>
+        <a class="view-btn" href="https://technical-documentation-page-mu-snowy.vercel.app/" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-tile">
+      <img src="product.png">
+      <div class="overlay">
+        <h3>Product Landing Page</h3>
+        <a class="view-btn" href="https://product-landing-page-4bah.vercel.app/#pricing" target="_blank">View Project</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+<p>
+    I'm <b>Kleiser V. Castillo</b>, a dedicated Bachelor of Science in Information Technology (BSIT) student 
+    specializing in Web Technologies. I am passionate about designing and developing clean, responsive, 
+    and user-friendly websites that provide meaningful digital experiences.
+</p>
+<br>
+<p>
+    I continuously improve my skills in HTML, CSS, and programming by building projects that challenge 
+    my creativity and problem-solving abilities. I believe that strong foundations in structure, design, 
+    and functionality are essential in creating high-quality web applications.
+</p>
+<br>
+<p>
+    My goal is to become a professional web developer who can contribute innovative solutions 
+    to real-world problems. Every project I create is a step toward mastering the world of 
+    web development, strengthening both my technical expertise and my dedication to lifelong learning.
+</p>
+<br>
+<p>
+    Beyond coding, I value teamwork, time management, and adaptability. I am eager to collaborate, 
+    learn from experienced developers, and continuously grow in the ever-evolving field of technology.
+</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+<p>Let's connect! Reach out for collaborations, questions, or just to say hello.</p>
+    
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:kcstllo0601@gmail.com">kcstllo0601@gmail.com</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/kcast0601" target="_blank" rel="noopener">github.com/kcast0601</a></p>
+    </div>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button class="view-btn" type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; <span id="current-year"></span> Kleiser V. Castillo — Web Technologies</p>
+</footer>
+
+<script>
+
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('.nav-list');
+
+hamburger.addEventListener('click', () => {
+  navList.classList.toggle('active');
+  hamburger.classList.toggle('open');
+});
+
+document.querySelectorAll('section').forEach(section => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('in-view');
+      }
+    });
+  }, { threshold: 0.1 });
+  observer.observe(section);
+});
+
+window.addEventListener('scroll', () => {
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollPercent = (scrollTop / scrollHeight) * 100;
+  document.querySelector('.scroll-progress').style.width = scrollPercent + "%";
+});
+
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+</script>
+
 </body>
 </html>
-          
